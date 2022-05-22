@@ -15,3 +15,14 @@ WHEN all prompts are answered
 THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
+
+// prompt: length
+// prompt: uppercase
+// prompt: lowercase
+// prompt: numeric
+// prompt: special characters
+
+//define the prompts with var
+
+//create if else statements to ensure valid values are input
+
