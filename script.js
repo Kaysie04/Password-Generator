@@ -25,7 +25,7 @@ function generatePassword () {
 
          // create if statements for true statements
          if (confirmUpperCase) {
-                userChoices.push(upperCaseArray);
+                userChoices = userChoices.concat(upperCaseArray);
                 console.log(userChoices);
         }
 
@@ -33,36 +33,42 @@ function generatePassword () {
         var confirmLowerCase = confirm(" Do you want your password to include lowercase letters? Click 'Ok' for yes or 'Cancel' for no.")
 
         if (confirmLowerCase) {
-                userChoices.push(lowerCaseArray);
+                userChoices = userChoices.concat(lowerCaseArray);
                 console.log(userChoices);
         }
+        
 
         // prompt: numeric
          var confirmNumbers = confirm(" Do you want your password to include numbers letters? Click 'Ok' for yes or 'Cancel' for no.")
 
          if (confirmNumbers) {
-                userChoices.push(numbersArray);
+                userChoices = userChoices.concat(numbersArray);
                 console.log(userChoices);
         }
+        
 
         // prompt: special characters
         var confirmSpecialCharacters = confirm(" Do you want your password to include special characters letters? Click 'Ok' for yes or 'Cancel' for no.")
 
         if (confirmSpecialCharacters) {
-                userChoices.push(specialCharactersArray);
+                userChoices = userChoices.concat(specialCharactersArray);
                 console.log(userChoices);
         }
+        
 
         //create if else statements to ensure valid values are input
         if (confirmUpperCase === false && confirmLowerCase === false && confirmNumbers === false && confirmSpecialCharacters === false) {
                 return "Please choose atleast one option. Click 'Generate Password' to try again.";
         }      
 
-        userChoices = userChoices.flat();
+        //userChoices = userChoices.flat();
+        userChoices = userChoices.concat(arraytoadd)
         
         for (let i = 0; i < characterLength; i++); {
                 randomArray = (userChoices[Math.floor(Math.random() * userChoices.length)]);
                 randomPasswordArray.push(randomArray);
+
+                
         }
 
         return randomPasswordArray;      
