@@ -1,28 +1,23 @@
 # Password-Generator
 
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
+## Purpose
+The purpose of this project was to create a randomly generated password based on selected criteria by the user.
+The criteria included length (8-128 characters,) uppercase letters, lowercase letters, numbers and special characters.
+The user was guided through a series of prompts to choose what criteria they wanted. 
+Atleast one character type had to be selected or the user was prompted to try again.
+After all prompts were answered, a password was displayed that met the criteria that the user selected.
 
-// prompt: length
-// prompt: uppercase
-// prompt: lowercase
-// prompt: numeric
-// prompt: special characters
+## Technologies
+HTML
+CSS
+JavaScript
 
-//define the prompts with var
+## Webpage Display
+![Webpage Image](../image.png)
 
-//create if else statements to ensure valid values are input
+## Website Link
+https://kaysie04.github.io/Password-Generator/
+
+## Licenses
+MIT
 
