@@ -13,10 +13,10 @@ CSS
 JavaScript
 
 ## Webpage Display
-![Webpage Image](../image.png)
+![Webpage Image](image.png)
 
 ## Website Link
-https://kaysie04.github.io/Password-Generator/
+
 
 ## Licenses
 MIT
